@@ -1,1 +1,309 @@
 /* место для вашего кода */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 92px;
+    margin-bottom: 92px;
+    margin-left: 51px;
+    margin-right: 49px;
+}
+
+.header > .logo {
+    align-self: center;
+}
+
+.menu > li:nth-child(1) {
+    list-style-type: none;
+    border-bottom: none;
+    margin: 0;
+}
+
+.menu > li {
+    margin-left: 32px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+.menu {
+    list-style: circle;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+}
+
+.logo {
+    width: 148px;
+    height: 105px;
+}
+
+.contacts > a {
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+.address {
+    font-style: normal;
+}
+
+.cover {
+    width: 100%;
+    height: 757px;
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    width: 100%;
+    height: 757px;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 165px 50px 62px 50px;
+}
+
+.title > h1 {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 100px */
+    letter-spacing: 60px;
+    text-transform: uppercase;
+}
+
+.title > h1:nth-child(1) {
+    text-align: left;
+}
+
+.title > h1:nth-child(2) {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title > h1:nth-child(3) {
+    text-align: right;
+}
+
+.titleBottom {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 135px;
+}
+
+.titleBottom > p {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+
+    margin-right: 78px;
+}
+
+.titleBottom > button {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    background: none;
+    border: 1px white solid;
+    padding: 12px 32px;
+}
+
+.lots {
+    height: 579px;
+    margin-top: 180px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.lots > h1 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-left: 40px;
+}
+
+.lots > a {
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-left: 40px;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+    width: auto;
+}
+
+.lotsItems {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 27px;
+    margin-bottom: 30px;
+    gap: 25px;
+}
+
+.lotsItems > div {
+    width: 430px;
+    height: 450px;
+}
+
+.lotsItems > div > div {
+    position: relative;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    padding: 50px 40px;
+}
+
+.lotsItems > div > div > h2 {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 26.4px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.lotsItems > div > div > p {
+    position: absolute;
+    bottom: 50px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+}
+
+.lotsItems > div:nth-child(1) {
+    background-image: url("../images/card-lot-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lotsItems > div:nth-child(2) {
+    background-image: url("../images/card-lot-02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lotsItems > div:nth-child(3) {
+    background-image: url("../images/card-lot-03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about {
+    position: relative;
+    height: 487px;
+    margin-top: 181px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.circle{
+    position: absolute;
+    background-color: #000;
+    clip-path: circle(50%);
+    height: 240px;
+    width: 240px;
+    padding: 63px 46px;
+    margin-left: 95px;
+}
+
+.about > h1 {
+    position: absolute;
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 455px;
+    margin-top: 100px;
+}
+
+.circle > img {
+    object-fit: cover;
+}
+
+.aboutText {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 247px;
+    margin-left: 455px;
+    gap: 25px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 97px;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 90px;
+}
+
+.footer > .contacts > a {
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+.footerMenu > li > a {
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+.footerMenu {
+    list-style: none;
+    justify-items: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.messangers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.messangers > img {
+    height: 48px;
+    width: 60px;
+}
