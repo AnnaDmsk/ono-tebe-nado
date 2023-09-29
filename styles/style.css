@@ -18,24 +18,28 @@
     align-self: center;
 }
 
-.menu-first {
+.menu-item_no-bullit {
     list-style-type: none;
     border-bottom: none;
     margin: 0;
 }
 
-.menu-first > a {
+.menu-link_active {
     list-style-type: none;
     text-decoration: none;
     border-bottom: none;
     margin: 0;
 }
 
+.menu > li:first-child {
+    margin-left: 0px;
+}
+
 .menu > li {
     margin-left: 32px;
 }
 
-.menu-other {
+.menu-link {
     text-decoration: none;
     border-bottom: 1px black solid;
 }
@@ -44,7 +48,6 @@
     list-style: circle;
     display: flex;
     flex-direction: row;
-    justify-items: space-between;
 }
 
 .logo {
@@ -89,22 +92,32 @@
     letter-spacing: 0.6em;
 }
 
-.title > span {
-    display: block;
-    width: 100%;
+.null-spacing {
+    letter-spacing: 0em;
+}
 
+.title {
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
-    line-height: 105%; /* 100px */
     letter-spacing: 0.3em;
     text-transform: uppercase;
 }
 
-.title:last-child { 
-    margin-bottom: 0;
+.title > span {
+    display: block;
+    width: 100%;
+    line-height: 100%; /* 100px */
+}
+
+.title > span:first-child {
+    line-height: 115%; /* 100px */
+}
+
+.title > span:last-child { 
+    margin-top: 20px;
 }
 
 .title-left {
@@ -112,6 +125,7 @@
 }
 
 .title-center {
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -120,22 +134,23 @@
 }
 
 .title-bottom {
-    position: absolute;
+    position: relative;
+    margin-top: 135px;
+
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    bottom: 50px;
-    right: 50px;
 }
 
 .title-bottom > p {
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 127.273% */
+    word-spacing: .85em;
     text-transform: uppercase;
 
     margin-right: 78px;
@@ -144,7 +159,7 @@
 .title-bottom > button {
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -157,15 +172,14 @@
 }
 
 .lots {
-    min-height: 579px;
     margin-top: 180px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.lots > h1 {
+.lots > h2 {
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -177,7 +191,7 @@
 
 .lots > a {
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -207,6 +221,9 @@
 }
 
 .lots-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     height: 100%;
     width: 100%;
@@ -215,10 +232,10 @@
     padding: 50px 40px;
 }
 
-.lots-article > h2 {
+.lots-article > h3 {
     position: relative;
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -228,31 +245,30 @@
 }
 
 .lots-article > p {
-    position: absolute;
-    bottom: 50px;
+    position: relative;
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 24px */
 }
 
-.lot-one {
+.lot-film {
     background-image: url("../images/card-lot-01.jpg");
 }
 
-.lot-two {
+.lot-book {
     background-image: url("../images/card-lot-02.jpg");
 }
 
-.lot-three {
+.lot-paint {
     background-image: url("../images/card-lot-03.jpg");
 }
 
 .about {
     display: grid;
-    grid-template-rows: repeat(3, 240px);
+    grid-template-rows: repeat(3);
     grid-template-areas: 
     "img title"
     ". text"
@@ -264,7 +280,7 @@
     margin-right: 50px;
 }
 
-.logo-white{
+.logo-about{
     grid-area: img;
 
     background-color: #000;
@@ -275,8 +291,10 @@
     margin-left: 95px;
 }
 
-.logo-white > img {
+.logo-about > img {
     object-fit: cover;
+    width: 148px;
+    height: 114px;
 }
 
 .about-content {
@@ -290,7 +308,7 @@
     grid-area: title;
 
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, 'Times New Roman', Times, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -318,6 +336,7 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 90px;
+    margin-top: 180px;
 }
 
 .footer > a {
@@ -327,7 +346,6 @@
 
 .footer-menu {
     list-style: none;
-    justify-items: space-between;
     align-items: center;
     display: flex;
     flex-direction: column;
